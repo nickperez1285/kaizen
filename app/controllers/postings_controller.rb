@@ -37,48 +37,48 @@ class PostingsController < ApplicationController
 
 
   if @last_posting.outlines.count == 0 
-   @last_posting.outlines.create 
+   @last_posting.outlines.build
   end 
 
   if @last_posting.layout_sections.count == 0 
-    2.times{@last_posting.layout_sections.create} 
+    2.times{@last_posting.layout_sections.build} 
   end 
 
   if  @last_posting.evolves.count == 0 
-   3.times{@last_posting.evolves.create} 
+   3.times{@last_posting.evolves.build} 
   end  
 
   if  @last_posting.revs.count == 0 
-   5.times{@last_posting.revs.create} 
+   5.times{@last_posting.revs.build} 
   end   
 
   if  @last_posting.overviews.count == 0 
-   8.times{@last_posting.overviews.create} 
+   8.times{@last_posting.overviews.build} 
   end  
 
    if  @last_posting.tests.count == 0 
-   13.times{@last_posting.tests.create} 
+   13.times{@last_posting.tests.build} 
   end
    if  @last_posting.educates.count == 0 
-   21.times{@last_posting.educates.create} 
+   21.times{@last_posting.educates.build} 
   end    
   if  @last_posting.creates.count == 0 
-   34.times{@last_posting.creates.create} 
+   34.times{@last_posting.creates.build} 
   end 
     if  @last_posting.hones.count == 0 
-   55.times{@last_posting.hones.create} 
+   55.times{@last_posting.hones.build} 
   end 
 
  if  @last_posting.index_sections.count == 0 
-   88.times{@last_posting.index_sections.create} 
+   88.times{@last_posting.index_sections.build} 
   end 
 
  if  @last_posting.notes.count == 0 
-   144.times{@last_posting.notes.create} 
+   144.times{@last_posting.notes.build} 
   end 
 
   if @last_posting.contacts.count == 0 
-    233.times{@last_posting.contacts.create}
+    233.times{@last_posting.contacts.build}
   end 
 # ------------------------
       @last_begin= @postings.last.begin

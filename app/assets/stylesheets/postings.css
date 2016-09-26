@@ -47,6 +47,10 @@
   display:block;
 }
 
+.letter { 
+color: red ;
+ }
+
 /*  input{ 
     display: inline-block;
     max-width: 8em;

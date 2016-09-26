@@ -1,9 +1,0 @@
-
-	<class id = "home", style= "display: inline-block; border-radius: 25px ; border:solid ; border-color: #337ab7; padding:6px; "> <%=link_to( "Home" , :action => "index", :controller => "postings")%></class>
-	<div id = "logout-btn", style= "display: inline-block; border-radius: 25px ; border:solid ; border-color: #337ab7; padding:6px; float:right ; "> <%=link_to( "Logout" , :action => "destroy", :controller => "sessions")%>
-	</div>
-	<hr>
-<% @postings.each do |post| %> 
-<%= link_to time_tag(post.created_at), posting_path(post.id)%> 
-<br>
-<%end%>  
