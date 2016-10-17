@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     actionmailer (4.2.4)
       actionpack (= 4.2.4)
@@ -71,6 +72,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     mysql2 (0.3.21)
+    nginx (0.0.2)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -162,6 +164,7 @@ DEPENDENCIES
   devise
   jquery-rails
   mysql2
+  nginx
   rails (= 4.2.4)
   rails_12factor
   sass-rails (~> 5.0)

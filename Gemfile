@@ -14,6 +14,7 @@ gem 'mysql2' # Use SCSS for stylesheets
 gem 'simple_form'
 gem 'sass-rails', '~> 5.0'
 gem 'unicorn'
+gem 'nginx'
 
 # # Use jquery as the JavaScript library
 gem 'jquery-rails'
