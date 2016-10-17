@@ -1,23 +1,26 @@
 Rails.application.routes.draw do
+root "postings#show"
 
+match ':controller(/:action(/:id))', :via => [:get, :post]
 #   devise_for :users
-
+# match "*path" => redirect('/postings')
+# root 'postings#index'
   get '/login' => 'users#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
+  # get "postings/index"
 
 
 #   authenticated :user do
-#     root 'postings#index', as: :authenticated_root
+    # root 'postings#index'
 #   end
 
-#   root "login"
+  # root "login"
 # end
 
 
-root "postings#index"
 # devise_for :users
 
 # devise_scope :user do

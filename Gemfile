@@ -1,18 +1,19 @@
-source 'https://rubygems.org'
-
+'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+gem 'thin'
+gem 'rails_12factor'
 # Use mysql as the database for Active Record
 gem 'devise'
-gem 'puma'
+# gem 'puma'
 gem 'uglifier'
 
 # Use mysql as the database for Active Record
 gem 'mysql2' # Use SCSS for stylesheets
 gem 'simple_form'
 gem 'sass-rails', '~> 5.0'
-
+gem 'unicorn'
 
 # # Use jquery as the JavaScript library
 gem 'jquery-rails'

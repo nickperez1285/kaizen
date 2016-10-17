@@ -126,7 +126,7 @@ class PostingsController < ApplicationController
 
   def show 
     @user = User.find(current_user.id)
-    @postings = @user.postings.find(params[:id])
+    @postings = @user.postings.last
     @outlines = @postings.outlines
     @layouts = @postings.layout_sections
     @evolves = @postings.evolves
