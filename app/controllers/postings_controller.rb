@@ -6,9 +6,10 @@ class PostingsController < ApplicationController
 
     @posting = @user.postings.new
     @postings = @user.postings.all 
+    # @postings = Posting.all 
     # ------------------------- makes first posting
-    if @postings.count == 0 
-     @user.postings.create 
+    if @postings.count < 1 
+     @user.postings.create
     end 
     # -------------------
     @last_posting = @postings.last

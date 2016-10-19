@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-root "postings#show"
+root "postings#index"
 
-match ':controller(/:action(/:id))', :via => [:get, :post]
+# match ':controller(/:action(/:id))', :via => [:get, :post]
 #   devise_for :users
 # match "*path" => redirect('/postings')
 # root 'postings#index'
